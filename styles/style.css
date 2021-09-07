@@ -1,0 +1,1021 @@
+/*----------------------------------------Global styles--------------------------------------------*/
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+body{
+    background-color: #1F1F1F;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+.content-area h1{
+    text-align: center;
+    margin: 10px 0 25px; ;
+}
+
+.hide{
+    display: none;
+}
+
+.error{
+    color: red;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+button{
+    background: #1a1616;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 50px;
+}
+
+button:hover{
+    background: #eb541d;
+    transition: ease;
+	transition-duration: .5s;
+	color: #f2f2f2;
+}
+
+.button-reverse{
+	background:  #f2f2f2;
+	color: #1a1616;
+}
+
+
+.button-reverse a{
+	text-decoration: none;
+	font-weight: 600;
+	padding:20px;
+}
+
+.button-reverse a:hover{
+	 transition: ease;
+    transition-duration: .5s;
+	color: #f2f2f2;
+}
+
+
+
+/*-----------------------------------Main section Styles---------------------------------------*/
+
+
+
+.main{
+    background: #F9F9F9;
+}
+
+.content-area{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 25px 0px;
+
+}
+
+
+.col-single{
+    padding: 25px;
+}
+
+.col-double{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.heading h1, .heading p{
+    text-align: center;
+}
+
+
+.service-descript{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-text{
+    max-width: 500px;
+    padding: 16px;
+}
+.service-text h2{
+   margin-bottom: 15px;
+}
+
+
+
+
+
+/*----------------------------------------Nav styles--------------------------------------------*/
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 50px;
+	background-color: #1F1F1F;
+	font-family: 'Contrail One', cursive;
+
+}
+
+.logo img{
+	height: 50px;
+	margin-right: 10px;
+}
+
+.logo{
+	color: #F8f8f8;
+	letter-spacing: 5px;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: #eb541d;
+
+}
+
+.nav-links a{
+	color: #F8f8f8;
+	text-decoration: none;
+	letter-spacing: 5px;
+	font-size: 16px;
+    margin: 0 16px;
+}
+
+.nav-links a:hover{
+	color: coral;
+    transition-duration: .5s;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+
+.nav-links{
+	display:flex;
+	justify-content: space-around;
+	width: 40%;
+	max-width: 500px;
+}
+
+/*-----------mobile nav button------------------------*/
+.burger{
+	display:none;
+}
+.burger div{
+	width: 25px;
+	height: 2px;
+	background: #F8f8f8;
+	margin: 5px;
+}
+
+
+@media (max-width: 860px){
+	
+	body{
+	overflow-x: hidden;
+	min-width: 400px;
+}
+
+	.nav-links{
+		position: absolute;
+		right:0;
+		height: 92vh;
+		top:15vh;
+		background-color: #1F1F1F;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		min-width: 200px;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		
+	}
+	
+	.nav-links li{
+		opacity: 0;
+	}
+	
+	.burger{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+
+.nav-active{
+	transform: translateX(0%);
+	justify-content: flex-start;
+}
+.nav-active li{
+	opacity: 1;
+	margin: 20px;
+}
+
+
+/*----------------------------------------main page styles--------------------------------------------*/
+
+
+
+.main-background-top{
+    background-image: url(../images/tools.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.home-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 300px;
+    padding: 0 16px;
+}
+
+
+
+.home-section-2{
+        background: #f2f2f2;
+}
+
+
+.home-section-3{
+        background: #141313;
+        color: #f2f2f2;
+}
+
+.home-social div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.home-social div img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.home-social div a{
+    margin: 0 15px;
+}
+
+
+
+
+.home-block p{
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/*----------------------------------------about styles--------------------------------------------*/
+
+.ab-sec ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ab-sec ul li{
+    padding: 13px;
+}
+
+.about-img img{
+   max-width: 500px;
+}
+
+.ab-sec ul li p{
+   max-width: 400px;
+    line-height: 36px;
+}
+
+.about-section-1{
+    background: #f0f0f0;
+    padding-top: 50px;
+}
+
+.about-background-top{
+    background-image: url(../images/master-carpenter.jpeg);
+    height: 600px;
+    background-position: top center;
+    background-attachment: fixed;
+}
+.about-background-bottom{
+    background-image: url(../images/master-carpenter.jpeg);
+    height: 600px;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.about-section-1 h1{
+text-align: center;
+}
+
+
+.about-section-2 ul{
+    flex-wrap: wrap-reverse;
+}
+
+/*----------------------------------------join Selection styles--------------------------------------------*/
+
+
+.join-background-top{
+	background-image: url(../images/repairwoman3.jpeg);
+	 height: 600px;
+    background-position: center;
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.join-wrap{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.join-wrap p{
+	line-height: 36px;
+	font-size: 18px;
+	text-align: center;
+	
+}
+
+.join-wrap table{
+	margin: 0 auto;
+	border-spacing: 10px;
+	
+}
+
+.join-wrap td p{
+	text-align: left;
+}
+.t-col-l{
+	width: 50px;
+}
+
+
+
+
+/*----------------------------------------login Selection styles--------------------------------------------*/
+
+
+
+
+
+
+.login-container{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.login-container form div{
+	
+	margin: 20px 0;
+}
+
+.logged-in{
+    height: 25px;
+    color: white;
+    transition-duration: .5s;
+}
+
+
+
+.show-dashboard-link{
+	height: 25px;
+    background: green;
+    color: white;
+    text-align: right;
+    transition-duration: .5s;
+}
+
+
+.dash{
+	display:flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+
+.logged-in{
+    height: 25px;
+    color: white;
+    transition-duration: .5s;
+	
+}
+
+.user-link li{
+	background: #eb541d;
+	min-width: 100px;
+	text-align: center;
+	list-style: none;
+	padding: 0 5px ;
+	font-weight: 600;
+}
+
+.user-link a{
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/*
+
+.login-background-top{
+	background-image: url(../images/repairwoman7.jpeg);
+	 height: 400px;
+    background-position: center;
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.login-wrap{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.login-wrap p{
+	line-height: 36px;
+	font-size: 18px;
+	text-align: center;
+	
+}
+
+.login-wrap table{
+	margin: 0 auto;
+	border-spacing: 10px;
+	
+}
+
+.login-wrap td p{
+	text-align: left;
+}
+.t-col-l{
+	width: 50px;
+}
+*/
+
+
+
+
+
+/*------------------------------------------------Portal styles--------------------------------------------*/
+
+
+.portal-wrap{
+	
+	margin: 0 auto;
+	text-align: center;
+	min-height: 200px;
+	font-size: 1.3em;
+	padding: 25px;
+	position: relative;
+	bottom: 100px;
+	z-index: 1;
+	
+	
+}
+
+.portal-background{
+	background: #f2f2f2;
+	width: 550px;
+	height: 250px;
+	position: relative;
+	top: 175px;
+	z-index: 0;
+	opacity: .8;
+}
+
+.main-portal{
+	background: url(../images/hammering.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.portal-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 36px;
+}
+
+
+
+
+
+
+/*------------------------------------------------Inquire styles--------------------------------------------*/
+
+
+.inquire-wrap{
+	
+	margin: 0 auto;
+	text-align: center;
+	min-height: 200px;
+	font-size: 1.3em;
+	padding: 25px;
+	position: relative;
+	bottom: 100px;
+	z-index: 1;
+	
+	
+}
+
+.inquire-background{
+	background: #f2f2f2;
+	width: 550px;
+	height: 250px;
+	position: relative;
+	top: 175px;
+	z-index: 0;
+	opacity: .8;
+}
+
+.main-inquire{
+	background: url(../images/repairwoman4.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.inquire-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 36px;
+}
+
+
+
+/*----------------------------------------thank you styles---------------------------------------------------*/
+
+
+.thankyou-wrap{
+	
+	margin: 0 auto;
+	text-align: center;
+	min-height: 200px;
+	font-size: 1.3em;
+	padding: 25px;
+	position: relative;
+	bottom: 100px;
+	z-index: 1;
+	
+	
+}
+
+.thankyou-background{
+	background: #f2f2f2;
+	width: 550px;
+	height: 250px;
+	position: relative;
+	top: 175px;
+	z-index: 0;
+	opacity: .8;
+}
+
+.main-thankyou{
+	background: url(../images/home-in-hand.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.thankyou-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 36px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------testimonials styles---------------------------------------------------*/
+
+
+.testimonials-wrap{
+	
+	margin: 0 auto;
+	text-align: center;
+	min-height: 200px;
+	font-size: 1.3em;
+	padding: 25px;
+	position: relative;
+	bottom: 100px;
+	z-index: 1;
+	
+	
+}
+
+.testimonials-background{
+	background: #f2f2f2;
+	width: 550px;
+	height: 250px;
+	position: relative;
+	top: 175px;
+	z-index: 0;
+	opacity: .8;
+}
+
+.main-testimonials{
+	background: url(../images/repairman1.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.testimonials-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 36px;
+}
+
+
+
+
+
+
+/*----------------------------------------Service Selection styles--------------------------------------------*/
+
+
+
+.service-grid{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-heading{
+    text-align: center;
+    margin: 10px 0 25px;
+}
+
+.service-div{
+    margin: 25px;   
+}
+.service-div p{
+    margin: 10px 0px;
+    
+}
+
+.service-div img{
+    width: 250px;
+    cursor: pointer;
+}
+
+
+.inside-services ul, .outside-services ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-filter{
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+
+#filter option{
+    min-width: 140px;
+}
+
+
+
+
+
+
+/*description page styles*/
+
+.services-content-area h1{
+ text-align: center;
+ margin-bottom: 50px; 
+ padding-top: 50px; 
+}
+
+.services-content-area img{
+	width: 600px;
+   }
+
+.service-description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .services-content-area img{
+	display: flex;
+   }
+
+.service-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 70px
+}
+
+.service-text h3{
+   text-align: center;
+    margin: 25px 0 5px;
+}
+
+.note{
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.add-service{
+    width: 100px;
+    background: #1a1616;
+    color: #f2f2f2;
+    border: none;
+    font-size: 16px;
+    margin: 30px; 
+}
+
+.add-service{
+    text-align: center;
+}
+
+.add-service-form-table{
+margin: 0 auto;
+}
+
+.add-p{
+    text-align: center;
+}
+
+.p-bold{
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+/*----------------------------------------Shopping cart styles--------------------------------------------*/
+
+
+.heading-row{
+    max-width: 1200px;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+
+/*product row---------*/
+.product-row img{
+    width: 250px;
+}
+
+
+.product-row{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+
+.product-row ul{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.product-row ul li{
+    padding: 0px 50px 0px 0px;
+    margin: 16px 0;
+    text-align: center;
+    
+}
+
+.pr-row-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.product-row-description{
+text-align: left;
+}
+
+
+.line{
+    background: black;
+    height: 1px;
+    width: 100%;
+    clear: both;
+}
+
+/*total Row*/
+
+.total-row{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    align-items: flex-end;
+}
+
+.total-row .button{
+    margin: 0 30px 16px 0px;
+    padding: 0 10px;
+    border-style: none;
+    background: coral;
+    color: #f9f9f9;
+    font-size: 24px;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.total-row td{
+    text-align: right;
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+/*-----------------------------------Checkout section Styles---------------------------------------*/
+
+.checkout-table{
+    border-spacing: 15px;
+}
+
+.checkout-table td{
+}
+.checkout-table th{
+    text-align: right;    
+}
+
+select, input{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+}
+
+/*summary blocks*/
+
+
+.summary-block{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.summary-block div{
+   padding: 5px;
+}
+
+.summary-block-price{
+  align-self:flex-start;
+
+
+}
+
+.summary-block h3{
+    text-align: center;
+}
+
+.summary-block img{
+    height: 100px;
+}
+
+.summary-block-description{
+   font-size: 13px;
+    max-width: 100px;
+    align-self: flex-start;
+}
+
+.summary-total table{
+    float: right;
+}
+
+.order-summary{
+    margin-top: 10px;
+}
+
+/*-----------------------dashboard styles----------------------*/
+
+.tbl_add_service_name td:nth-child(1) {
+		padding-right: 36px;
+	}
+	
+	.tbl_add_service_overview td:nth-child(1) {
+		padding-right: 12px;
+	}
+	
+	.tbl_add_service_rate td:nth-child(1) {
+		padding-right: 36px;
+	}
+	
+	.tbl_update_service_name td:nth-child(1) {
+		padding-right: 36px;
+	}
+	
+	.tbl_update_service_overview td:nth-child(1) {
+		padding-right: 12px;
+	}
+	
+	.tbl_update_service_rate td:nth-child(1) {
+		padding-right: 36px;
+	}
+
+
+.cms_dash form{
+	max-width: 400px;
+	
+
+}
+.cms_dash form div{
+	
+	margin: 20px 0;
+}
+
+/*select service 2*/
+.schedule-service {
+	min-height: 700px;
+}
+
+.schedule-service form{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.schedule-service form div{
+	margin: 20px;
+}
+
+
+
+/*----------------------------------------footer styles--------------------------------------------*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+}
+.footer div{
+    padding: 25px 50px;
+}
+
+
